@@ -338,6 +338,7 @@ const Offers = () => {
                               <div key={option} className="flex items-center space-x-2">
                                 <Checkbox
                                   id={`${category}-${option}`}
+                                  className="rounded-none h-5 w-5"
                                   checked={selectedFilters[category].includes(option)}
                                   onCheckedChange={(checked) => 
                                     handleFilterChange(category, option, checked as boolean)
